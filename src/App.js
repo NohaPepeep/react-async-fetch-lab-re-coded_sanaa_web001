@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div id="root">
-         {this.componentDidMount()}
+         {this.state.peopleInSpace.map(person => person.name)}
       </div>
     )
   }
